@@ -6,7 +6,7 @@
 		public function login($login, $passwd)
 		{
 	    	$data = $this->selectM('users', ['login', 'passwd', 'id_role']);
-	  
+
 	    	foreach ($data as $elem)
 	    	{
 		    	if ($elem['login'] === $login and password_verify($passwd, $elem['passwd']))
@@ -58,7 +58,7 @@
                 unset($elem['id']);
                 unset($elem['passwd']);
                 unset($record['passwd']);
-               
+
                 if ($elem == $record)
                     return $id;
             }

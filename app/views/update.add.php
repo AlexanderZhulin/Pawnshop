@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    $auth = new Auth();
     $auth->checkAccess();
 ?>
 <a class="btn btn-primary" href="/table/<?= str_replace("_", "-", $table) ?>" role="button">Назад к таблицам</a>

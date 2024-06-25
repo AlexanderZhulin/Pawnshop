@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    $auth = new Auth();
     $auth->checkAccess();
 ?>
 <form action="/change-passwd/submit" method="POST">

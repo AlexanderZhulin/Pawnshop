@@ -1,6 +1,4 @@
- <?php
-    session_start();
-    $auth = new Auth();
+<?php
     $auth->checkAccess();
 ?>
 <br>

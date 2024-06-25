@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    $auth = new Auth();
     $auth->checkAccess();
 
     if ($_SESSION['role'] != 1) 
